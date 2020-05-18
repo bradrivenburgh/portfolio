@@ -1,0 +1,214 @@
+/* -------
+Note: I attempted to use the BEM (block__element--modifier) methodology (with varying degrees of success) 
+in order to make the styles more modular, and thus portable to other projects without too many issues with 
+inheritance. I'm not thrilled with the number of classes I had to use, but hopefully I'll have an easier 
+time reusing and tweaking these styles for future iterations of my portfolio.
+------- */
+
+/* -------Font links------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@500&display=swap');
+
+
+/* -------Box-sizing reset ------- */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* -------Page-level block------- */
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    background: rgb(238, 238, 238);
+    background-image: url(images/crossword.png);
+}
+
+
+/* -------Primary header block------- */
+
+.primary-header {
+    font-family: 'Roboto Slab', serif; 
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: .5rem 0 0 .5rem;
+    background-image: url(images/vintage-wallpaper.png);
+}
+
+.primary-header__title {
+    color: #F9F9F9;
+    font-size: 48px;
+    margin: 0;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.primary-header__subtitle {
+    color: #F9F9F9;
+    font-size: 24px;
+    margin: 0;
+    padding: 1rem;
+}
+
+
+/* -------Main content container------- */
+
+.main {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.main__profile-picture {
+    padding-bottom: 2rem;
+}
+
+.main__profile-picture img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0px 0px 10px 7px;
+}
+
+
+/* -------Section block-------*/
+
+.section {
+    padding: 1rem 0;
+    line-height: 2rem;
+}
+
+.section__heading {
+    font-family: 'Roboto Slab', serif; 
+    font-size: 36px;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.section__subheading {
+    font-family: 'Roboto Slab', serif; 
+    font-size: 24px;
+    font-weight: 500;
+    padding: .5rem 0;
+
+}
+
+.section__content__ul {
+    list-style-type: circle;
+    list-style-image: url("images/ul-clock-bullet.png");
+}
+
+.section__content__ul li {
+    margin: 0 0 .5rem 0;
+}
+
+.section__content__ol {
+    padding: 0 0 0 1rem;
+}
+
+.section__content__ol h3 {
+    font-size: 20px;
+    margin: 0 0 .5rem 0;
+}
+
+.section__content__ol p {
+    margin: 0 0 1rem 0;
+    line-height: 2rem;
+}
+
+/* -------Portfolio element-------  
+This will eventually be converted to a flex-box or grid layout, and each project image will link to a separate 
+page that has more information about the project. */
+
+.section_portfolio {
+    max-width: 100%;
+    background-color: #2C3860;
+    color: #F9F9F9;
+    padding: 1rem .5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.section__portfolio__heading {
+    font-family: 'Roboto Slab', serif; 
+    font-weight: 500;
+    margin: 0 0 .5rem 0;
+    text-align: center;
+}
+
+.section__portfolio__image img {
+    max-width: 100%;    
+}
+
+.section__portfolio__description {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+
+/* -------Contact block------- */
+
+.section__contact__map {
+    border: 2px solid #000;
+    border-radius: 10px;
+    line-height: 0;
+}
+
+.section__contact__map iframe {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.section__contact__social {
+    padding-bottom: 1rem;
+}
+
+.section__contact__social img {
+    width: 4rem;
+    padding-right: 1rem;
+}
+
+
+/* -------Primary footer block------- */
+
+.primary-footer {
+    font-family: 'Roboto Slab', serif; 
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(images/vintage-wallpaper.png);
+}
+
+.primary-footer__content {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    padding: 2rem;
+}
+
+
+/* -------Links------- */
+
+a:link {
+    color: rgb(12, 165, 71);
+}
+
+a:visited {
+    color: rgb(173, 167, 162);
+
+}
+
+a:hover {
+    color: rgb(228, 119, 24);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(255, 0, 0);
+}
+
