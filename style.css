@@ -27,6 +27,60 @@ body {
     background-image: url(images/crossword.png);
 }
 
+/* -------Layout------- */
+
+.bg-color {
+    background-image: url("images/sos.png");
+    margin: 9px 0;
+    padding-bottom: .5rem;
+}
+
+.wrapper {
+    margin: 0;
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-1 {
+    flex: 1;
+}
+
+.item-2 {
+    flex: 2;
+}
+
+.item-3 {
+    flex: 3;
+}
+
+@media all and (min-width: 800px) {
+    .wrapper {
+        margin: 0 10%;
+    }
+
+    .group {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 -1rem;
+    }
+    
+    .item-1 {
+        margin: 0 1rem;
+    }
+    
+    .item-2 {
+        margin: 0 1rem;
+    }
+    
+    .item-3 {
+        margin: 0 1rem;
+    }
+}
 
 /* -------Primary header block------- */
 
@@ -57,54 +111,68 @@ body {
 /* -------Main content container------- */
 
 .main {
-    max-width: 620px;
     margin: 0 auto;
-    padding: 0 1rem 1rem 1rem;
-}
-
-.main__profile-picture {
-    padding-bottom: 2rem;
+    padding: 0 0 1rem 0;
 }
 
 .main__profile-picture img {
     width: 100%;
     display: block;
     margin: 0 auto;
-    border-radius: 0px 0px 10px 7px;
+    padding: 0 0 .43rem 0;
+    border-radius: 0px 0px 5% 5%;
 }
 
+@media all and (min-width: 800px) {
+    .main {
+        padding: 0;
+    }
+
+    .main__profile-picture {
+        margin-top: 2.1rem;
+        padding-bottom: 2rem;
+    }
+
+    .main__profile-picture img {
+        border-radius: 5%;
+    }
+
+}
 
 /* -------Section block-------*/
-
-.section {
-    padding: 1rem 0;
-    line-height: 2rem;
-}
 
 .section__heading {
     font-family: 'Roboto Slab', serif; 
     font-size: 36px;
     margin: 0;
-    padding: 1rem 0;
+    padding: 2rem 0 1.3rem 0;
 }
 
 .section__subheading {
     font-family: 'Roboto Slab', serif; 
     font-size: 24px;
-    font-weight: 500;
-    padding: .5rem 0;
+    font-weight: 700;
+    margin: 0;
+    padding-top: .5rem;
 }
 
 .section__content__ul {
-    list-style-type: circle;
-    list-style-image: url("images/ul-clock-bullet.png");
+    list-style-type: none;
+    padding-inline-start: 1rem;
 }
 
 .section__content__ul li {
     margin: 0 0 .5rem 0;
+
+    background-image: url("images/clock-bullet-transparent.png");
+    background-repeat: no-repeat;
+    background-position: .1rem .6rem;
+    padding-left: 2rem;
+
 }
 
 .section__content__ol {
+    margin: 0;
     padding: 0 0 0 1rem;
 }
 
@@ -118,17 +186,22 @@ body {
     line-height: 2rem;
 }
 
+@media all and (min-width: 800px) {
+    .section__content__ol {
+        margin: 18px;
+    }
+}
+
 /* -------Portfolio element-------  
-This will eventually be converted to a flex-box or grid layout, and each project image will link to a separate 
-page that has more information about the project. */
+Each project image will eventually link to a separate page that has more information about the project. */
 
 .section_portfolio {
     max-width: 100%;
     background-color: #2C3860;
     color: #F9F9F9;
-    padding: 1rem .5rem;
+    padding: .5rem .5rem;
+    margin: 1rem 0 2.2rem 0;
     border-radius: 10px;
-    margin: 1rem 0;
 }
 
 .section__portfolio__heading {
@@ -160,15 +233,23 @@ page that has more information about the project. */
 .section__contact__map iframe {
     border-radius: 10px;
     width: 100%;
+    margin-bottom:
+}
+
+@media all and (min-width: 800px) {
+    .section__contact__map {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .section__contact__social {
-    padding-bottom: 1rem;
+    padding: .63rem 0 1rem 0;
 }
 
 .section__contact__social img {
     width: 4rem;
     height: auto;
+    padding-top: 1rem;
     padding-right: 1rem;
 }
 
