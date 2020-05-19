@@ -93,7 +93,6 @@ body {
     font-size: 24px;
     font-weight: 500;
     padding: .5rem 0;
-
 }
 
 .section__content__ul {
@@ -169,6 +168,7 @@ page that has more information about the project. */
 
 .section__contact__social img {
     width: 4rem;
+    height: auto;
     padding-right: 1rem;
 }
 
