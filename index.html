@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Brad Rivenburgh | Web Developer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
         type="text/css" />
@@ -13,8 +13,19 @@
 <body>
 
     <header class="primary-header">
-        <h1 class="primary-header__title">Brad Rivenburgh</h1>
-        <h2 class="primary-header__subtitle">Web Developer</h2>
+        <div class="logo">
+            <h1 class="primary-header__title">Brad Rivenburgh</h1>
+            <h2 class="primary-header__subtitle">Web Developer</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hello">Hello</a></li>
+                <li><a href="#who-i-am">Who I am</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#how-i-can-help">How I can help</a></li>
+                <li><a href="#contact-me">Contact me</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Container for the Hello, Who I Am, Portfolio, How I can help, and Contact me sections below -->
@@ -38,7 +49,7 @@
                         <!-- Hello: a brief greeting and statement of who I am and what I do  -->
 
                         <header>
-                            <h2 class="section__heading">Hello</h2>
+                            <h2 class="section__heading" id="hello">Hello</h2>
                         </header>
 
                         <p>
@@ -53,7 +64,7 @@
                         </p>
 
                     </section>
-                </div> 
+                </div>
             </div> <!-- End Group 1 -->
         </div> <!-- End Wrapper -->
 
@@ -65,7 +76,7 @@
                     <!-- Who I am: Details about my background and what drives me as a professional -->
 
                     <header>
-                        <h2 class="section__heading">Who I am</h2>
+                        <h2 class="section__heading" id="who-i-am">Who I am</h2>
                     </header>
 
                     <!-- -----Layout: Group 2----- -->
@@ -135,7 +146,7 @@
                     to show yet, so I've created this section with placeholder content -->
 
                 <header>
-                    <h2 class="section__heading">Portfolio</h2>
+                    <h2 class="section__heading" id="portfolio">Portfolio</h2>
                 </header>
 
 
@@ -150,7 +161,7 @@
 
                 <div class="group">
                     <div class="item-1">
-                        <div class="section_portfolio">
+                        <div class="section__portfolio">
                             <h3 class="section__portfolio__heading">Placeholder title </h3>
                             <div class="section__portfolio__image">
                                 <a href="#" target="_blank"><img src="images/portfolio-JS-takehome.png"
@@ -168,7 +179,7 @@
                         </div>
                     </div>
                     <div class="item-1">
-                        <div class="section_portfolio">
+                        <div class="section__portfolio">
                             <h3 class="section__portfolio__heading">Placeholder title </h3>
                             <div class="section__portfolio__image">
                                 <a href="#" target="_blank"><img src="images/portfolio-JS-takehome.png"
@@ -195,7 +206,7 @@
 
                 <div class="group">
                     <div class="item-1">
-                        <div class="section_portfolio">
+                        <div class="section__portfolio">
                             <h3 class="section__portfolio__heading">Placeholder title </h3>
                             <div class="section__portfolio__image">
                                 <a href="#" target="_blank"><img src="images/portfolio-JS-takehome.png"
@@ -213,7 +224,7 @@
                         </div>
                     </div>
                     <div class="item-1">
-                        <div class="section_portfolio">
+                        <div class="section__portfolio">
                             <h3 class="section__portfolio__heading">Placeholder title </h3>
                             <div class="section__portfolio__image">
                                 <a href="#" target="_blank"><img src="images/portfolio-JS-takehome.png"
@@ -244,7 +255,7 @@
                     what my focus will be yet, so I'm being general here. -->
 
                 <header>
-                    <h2 class="section__heading">How I can help</h2>
+                    <h2 class="section__heading" id="how-i-can-help">How I can help</h2>
                 </header>
 
                 <!-- -----Layout: Group 5----- -->
@@ -292,7 +303,7 @@
                 <!-- Contact me: How people can send me a message -->
 
                 <header>
-                    <h2 class="section__heading">Contact me</h2>
+                    <h2 class="section__heading" id="contact-me">Contact me</h2>
                 </header>
 
                 <p>
@@ -301,7 +312,7 @@
                 </p>
 
                 <!-- -----Layout: Group 6----- -->
-                
+
                 <div class="group">
                     <div class="item-1">
 

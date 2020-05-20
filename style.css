@@ -38,7 +38,7 @@ body {
 .wrapper {
     margin: 0;
     line-height: 2rem;
-    padding: 0 1rem;
+    padding: 0 .75rem 0 .75rem;
 }
 
 .group {
@@ -58,6 +58,12 @@ body {
     flex: 3;
 }
 
+@media all and (min-width: 600px) {
+    .wrapper {
+        margin: 0 5%;
+    }
+}
+
 @media all and (min-width: 800px) {
     .wrapper {
         margin: 0 10%;
@@ -68,207 +74,12 @@ body {
         justify-content: space-between;
         margin: 0 -1rem;
     }
-    
-    .item-1 {
-        margin: 0 1rem;
-    }
-    
-    .item-2 {
-        margin: 0 1rem;
-    }
-    
+
+    .item-1,
+    .item-2,
     .item-3 {
         margin: 0 1rem;
     }
-}
-
-/* -------Primary header block------- */
-
-.primary-header {
-    font-family: 'Roboto Slab', serif; 
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: .5rem 0 0 .5rem;
-    background-image: url(images/vintage-wallpaper.png);
-}
-
-.primary-header__title {
-    color: #F9F9F9;
-    font-size: 48px;
-    margin: 0;
-    padding: 1rem 1rem 0rem 1rem;
-}
-
-.primary-header__subtitle {
-    color: #F9F9F9;
-    font-size: 24px;
-    margin: 0;
-    padding: 1rem;
-}
-
-
-/* -------Main content container------- */
-
-.main {
-    margin: 0 auto;
-    padding: 0 0 1rem 0;
-}
-
-.main__profile-picture img {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    padding: 0 0 .43rem 0;
-    border-radius: 0px 0px 5% 5%;
-}
-
-@media all and (min-width: 800px) {
-    .main {
-        padding: 0;
-    }
-
-    .main__profile-picture {
-        margin-top: 2.1rem;
-        padding-bottom: 2rem;
-    }
-
-    .main__profile-picture img {
-        border-radius: 5%;
-    }
-
-}
-
-/* -------Section block-------*/
-
-.section__heading {
-    font-family: 'Roboto Slab', serif; 
-    font-size: 36px;
-    margin: 0;
-    padding: 2rem 0 1.3rem 0;
-}
-
-.section__subheading {
-    font-family: 'Roboto Slab', serif; 
-    font-size: 24px;
-    font-weight: 700;
-    margin: 0;
-    padding-top: .5rem;
-}
-
-.section__content__ul {
-    list-style-type: none;
-    padding-inline-start: 1rem;
-}
-
-.section__content__ul li {
-    margin: 0 0 .5rem 0;
-
-    background-image: url("images/clock-bullet-transparent.png");
-    background-repeat: no-repeat;
-    background-position: .1rem .6rem;
-    padding-left: 2rem;
-
-}
-
-.section__content__ol {
-    margin: 0;
-    padding: 0 0 0 1rem;
-}
-
-.section__content__ol h3 {
-    font-size: 20px;
-    margin: 0 0 .5rem 0;
-}
-
-.section__content__ol p {
-    margin: 0 0 1rem 0;
-    line-height: 2rem;
-}
-
-@media all and (min-width: 800px) {
-    .section__content__ol {
-        margin: 18px;
-    }
-}
-
-/* -------Portfolio element-------  
-Each project image will eventually link to a separate page that has more information about the project. */
-
-.section_portfolio {
-    max-width: 100%;
-    background-color: #2C3860;
-    color: #F9F9F9;
-    padding: .5rem .5rem;
-    margin: 1rem 0 2.2rem 0;
-    border-radius: 10px;
-}
-
-.section__portfolio__heading {
-    font-family: 'Roboto Slab', serif; 
-    font-weight: 500;
-    margin: 0 0 .5rem 0;
-    text-align: center;
-}
-
-.section__portfolio__image img {
-    max-width: 100%;    
-}
-
-.section__portfolio__description {
-    font-size: 1rem;
-    margin: 0;
-    line-height: 1.5rem;
-}
-
-
-/* -------Contact block------- */
-
-.section__contact__map {
-    border: 2px solid #000;
-    border-radius: 10px;
-    line-height: 0;
-}
-
-.section__contact__map iframe {
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom:
-}
-
-@media all and (min-width: 800px) {
-    .section__contact__map {
-        margin-bottom: 1.5rem;
-    }
-}
-
-.section__contact__social {
-    padding: .63rem 0 1rem 0;
-}
-
-.section__contact__social img {
-    width: 4rem;
-    height: auto;
-    padding-top: 1rem;
-    padding-right: 1rem;
-}
-
-
-/* -------Primary footer block------- */
-
-.primary-footer {
-    font-family: 'Roboto Slab', serif; 
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    background-image: url(images/vintage-wallpaper.png);
-}
-
-.primary-footer__content {
-    color: #fff;
-    font-size: 16px;
-    margin: 0;
-    padding: 2rem;
 }
 
 
@@ -293,3 +104,282 @@ a:active {
     color: rgb(255, 0, 0);
 }
 
+
+/* -------Primary header block------- */
+
+.primary-header {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(images/vintage-wallpaper.png);
+}
+
+.primary-header__title {
+    color: #F9F9F9;
+    font-size: 42px;
+    margin: 0;
+    padding: 1rem 0 0 0;
+}
+
+.primary-header__subtitle {
+    color: #F9F9F9;
+    font-size: 24px;
+    margin: 0;
+    padding: .5rem 0 .5rem 0;
+}
+
+
+/* -------Navigation------- */
+.primary-header nav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.primary-header nav ul {
+    display: flex;
+    margin: .20rem 0 .75rem 0;
+    padding-inline-start: 0;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.primary-header nav ul li {
+    list-style-type: none;
+    margin: .5rem .5rem 0 .5rem;
+}
+
+.primary-header nav ul li a {
+    font-family: 'Lato', sans-serif;
+    color: #F9F9F9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.primary-header nav ul li a:hover {
+    color: rgb(228, 119, 24);
+}
+
+@media all and (min-width: 800px) {
+    .primary-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .primary-header nav ul {
+        margin: 0 .75rem 0 0;
+        align-items: center;
+    }
+
+    .primary-header nav ul li {
+        margin: 0 .5rem;
+    }
+
+    .primary-header__title {
+        font-size: 36px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .primary-header__subtitle {
+        font-size: 24px;
+        padding: .5rem 0 0 0;
+        text-align: left;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: .75rem 0 .75rem 1.25rem;
+    }
+}
+
+
+/* -------Main content container------- */
+
+.main {
+    margin: 0 auto;
+    padding: 0 0 1rem 0;
+}
+
+.main__profile-picture img {
+    width: 100%;
+    max-width: 550px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 .43rem 0;
+    border-radius: 0px 0px 5% 5%;
+}
+
+
+
+@media all and (min-width: 800px) {
+    .main {
+        padding: 0;
+    }
+
+    .main__profile-picture {
+        margin-top: 2.1rem;
+        padding-bottom: 2rem;
+    }
+
+    .main__profile-picture img {
+        border-radius: 5%;
+    }
+}
+
+/* -------Section block-------*/
+
+.section__heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    margin: 0;
+    padding: 2rem 0 1.3rem 0;
+}
+
+.section__subheading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: .5rem;
+}
+
+.section__content__ul {
+    list-style-type: none;
+    padding-inline-start: 1rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.section__content__ul li {
+    margin: 0 0 .25rem 0;
+    background-image: url("images/clock-bullet-transparent.png");
+    background-repeat: no-repeat;
+    background-position: .1rem .6rem;
+    padding-left: 2rem;
+}
+
+.section__content__ol {
+    margin: 0;
+    padding: 0 0 0 1rem;
+}
+
+.section__content__ol h3 {
+    font-size: 20px;
+    margin: 0 0 .5rem 0;
+}
+
+.section__content__ol p {
+    margin: 0 0 1rem 0;
+    line-height: 2rem;
+}
+
+@media all and (min-width: 800px) {
+    .section__content__ol {
+        margin: 18px;
+    }
+
+    .section__content__ul {
+        margin-bottom: 18px;
+    }
+}
+
+/* -------Portfolio element-------  
+Each project image will eventually link to a separate page that has more information about the project. */
+
+header+p+h3,
+div.group+h3 {
+    text-align: center;
+}
+
+.section__portfolio {
+    width: 100%;
+    background-color: #2C3860;
+    color: #F9F9F9;
+    padding: .5rem .5rem;
+    margin: 1rem 0 1rem 0;
+
+    border-radius: 10px;
+}
+
+@media all and (min-width: 600px) {
+    .section__portfolio {
+        max-width: 70%;
+        margin: 1.5rem auto;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .section__portfolio {
+        max-width: 100%;
+    }
+}
+
+.section__portfolio__heading {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    margin: 0 0 .5rem 0;
+    text-align: center;
+}
+
+.section__portfolio__image img {
+    max-width: 100%;
+}
+
+.section__portfolio__description {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+
+/* -------Contact block------- */
+
+.section__contact__map {
+    border: 2px solid #000;
+    border-radius: 10px;
+    line-height: 0;
+}
+
+.section__contact__map iframe {
+    border-radius: 10px;
+    width: 100%;
+}
+
+@media all and (min-width: 800px) {
+    .section__contact__map {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.section__contact__social {
+    padding: .63rem 0 1rem 0;
+}
+
+.section__contact__social img {
+    width: 4rem;
+    height: auto;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* -------Primary footer block------- */
+
+.primary-footer {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(images/vintage-wallpaper.png);
+}
+
+.primary-footer__content {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    padding: 2rem;
+}
