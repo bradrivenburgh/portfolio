@@ -307,14 +307,17 @@
                 </header>
 
                 <p>
-                    Please contact me via <a href="mailto:brad.rivenburgh@gmail.com">email</a> if you need
+                    Please contact me via <a href="mailto:brad.rivenburgh@gmail.com">email</a> or using this form if you
+                    need
                     a talented web developer and problem-solver to join your team.
                 </p>
 
+
                 <!-- -----Layout: Group 6----- -->
 
-                <div class="group">
-                    <div class="item-1">
+                <div class="group contact__group">
+
+                    <div class="item-1 reverse-item">
 
                         <h3 class="section__subheading">Find me on</h3>
                         <div class="section__contact__social">
@@ -323,8 +326,33 @@
                             <a href="https://github.com/bradrivenburgh" target="_blank"><img src="images/github.svg"
                                     alt="Github profile link"></a>
                         </div>
+
                     </div>
+
                     <div class="item-3">
+                        <!-- Contact form start -->
+
+                        <form action="https://formspree.io/brad.rivenburgh@gmail.com" method="POST">
+                            <label for="user-name">Name:</label>
+                            <input id="user-name" type="text" name="name" autofocus="on" required>
+                            <label for="user-email">Email:</label>
+                            <input id="user-email" type="email" name="" value="" required>
+                            <label for="user-message">Message:</label>
+                            <textarea id="user-message" name="message" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+
+                        <!-- Contact form end -->
+
+                    </div>
+                </div> <!-- End Group 6 -->
+
+                <!-- -----Layout: Group 7----- -->
+
+                <div class="group">
+
+                    <div class="item-1">
+
                         <h3 class="section__subheading">World Headquarters</h3>
                         <p>Let's meet up! If you're local or are visiting the Philadelphia area, I'm available to
                             meet to
@@ -338,7 +366,7 @@
                                 tabindex="0"></iframe>
                         </div>
                     </div>
-                </div> <!-- End Group 6 -->
+                </div> <!-- End Group 7 -->
 
             </section>
         </div> <!-- End wrapper -->

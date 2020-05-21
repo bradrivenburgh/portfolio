@@ -58,6 +58,10 @@ body {
     flex: 3;
 }
 
+.reverse-item {
+    order: 2
+}
+
 @media all and (min-width: 600px) {
     .wrapper {
         margin: 0 5%;
@@ -70,7 +74,7 @@ body {
     }
 
     .group {
-        flex-direction: row;
+        flex-flow: row wrap;
         justify-content: space-between;
         margin: 0 -1rem;
     }
@@ -79,6 +83,11 @@ body {
     .item-2,
     .item-3 {
         margin: 0 1rem;
+    }
+
+    .reverse-item {
+        order: -1;
+
     }
 }
 
@@ -365,6 +374,76 @@ div.group+h3 {
     padding-top: 1rem;
     padding-right: 1rem;
 }
+
+/* -------Contact form------ */
+
+form {
+    margin: .5rem 0 2rem;
+}
+
+@media all and (min-width: 800px) {
+    form {
+        margin: 0 0 3rem;
+        padding-top: .5rem;
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: .1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+form input[type="text"],
+input[type="email"] {
+    color: #000;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: .75rem;
+    width: 100%;
+}
+
+form textarea {
+    height: 5rem;
+    width: 100%;
+    color: #000;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-top: .3rem;
+    margin-bottom: 1.2rem;
+}
+
+form button {
+    padding: .5em 1em;
+    border-radius: .25rem;
+    border: solid 1px transparent;
+    font-family: inherit;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgb(64, 81, 136);
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+
+form button:hover {
+    border-color: currentColor;
+    color: rgb(64, 81, 136);
+    background-color: #fff;
+}
+
+form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(177, 175, 199);
+}
+
+
 
 
 /* -------Primary footer block------- */
