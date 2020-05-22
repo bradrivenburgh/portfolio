@@ -94,17 +94,16 @@ body {
 
 /* -------Links------- */
 
-a:link {
-    color: rgb(12, 165, 71);
+a {
+    color: rgb(57, 202, 0);
 }
 
 a:visited {
-    color: rgb(173, 167, 162);
-
+    color: rgb(223, 222, 222);
 }
 
 a:hover {
-    color: rgb(228, 119, 24);
+    color: rgb(255, 188, 81);
     font-weight: 600;
     text-decoration: none;
 }
@@ -121,6 +120,7 @@ a:active {
     text-align: center;
     width: 100%;
     margin: 0 auto;
+    background-color: #2C3860;
     background-image: url(images/vintage-wallpaper.png);
 }
 
@@ -213,12 +213,16 @@ a:active {
     padding: 0 0 1rem 0;
 }
 
+.main__profile-picture {
+    margin-bottom: .43rem;
+}
+
 .main__profile-picture img {
     width: 100%;
     max-width: 550px;
     display: block;
     margin: 0 auto;
-    padding: 0 0 .43rem 0;
+    box-shadow: 0 0 2px 1px #2C3860;
     border-radius: 0px 0px 5% 5%;
 }
 
@@ -265,9 +269,9 @@ a:active {
 
 .section__content__ul li {
     margin: 0 0 .25rem 0;
-    background-image: url("images/clock-bullet-transparent.png");
+    background-image: url("images/history-24px.svg");
     background-repeat: no-repeat;
-    background-position: .1rem .6rem;
+    background-position: .1rem .31rem;
     padding-left: 2rem;
 }
 
@@ -306,7 +310,7 @@ div.group+h3 {
 
 .section__portfolio {
     width: 100%;
-    background-color: #2C3860;
+    background-color: rgb(52, 65, 110);
     color: #F9F9F9;
     padding: .5rem .5rem;
     margin: 1rem 0 1rem 0;
@@ -393,7 +397,7 @@ label {
     margin-bottom: .1rem;
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
-    color: gray;
+    color: rgb(77, 77, 77);
 }
 
 form input[type="text"],
