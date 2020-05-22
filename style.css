@@ -92,14 +92,14 @@ body {
 }
 
 
-/* -------Links------- */
+/* -------Primary Links------- */
 
 a {
-    color: rgb(57, 202, 0);
+    color: rgb(36, 126, 0);
 }
 
 a:visited {
-    color: rgb(223, 222, 222);
+    /*color: rgb(223, 222, 222);*/
 }
 
 a:hover {
@@ -167,7 +167,7 @@ a:active {
 }
 
 .primary-header nav ul li a:hover {
-    color: rgb(228, 119, 24);
+    color: rgb(255, 188, 81);
 }
 
 @media all and (min-width: 800px) {
@@ -348,6 +348,10 @@ div.group+h3 {
     line-height: 1.5rem;
 }
 
+.section__portfolio__link {
+    color: rgb(57, 202, 0);
+}
+
 
 /* -------Contact block------- */
 
@@ -457,6 +461,7 @@ form button:focus {
     text-align: center;
     width: 100%;
     margin: 0 auto;
+    background-color: #2C3860;
     background-image: url(images/vintage-wallpaper.png);
 }
 
