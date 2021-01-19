@@ -310,13 +310,26 @@ div.group+h3 {
 
 .section__portfolio {
     width: 100%;
+    max-height: 700px;
     background-color: rgb(52, 65, 110);
     color: #F9F9F9;
     padding: .5rem .5rem;
     margin: 1rem 0 1rem 0;
-
     border-radius: 10px;
+    
+    /* Styles to hide scroll bar after making projects scroll because they're the same height */
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    /* Hide scroll bar for IE, Edge, and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .section__portfolio::-webkit-scrollbar {
+    display: none;
+  }
+
+
 
 @media all and (min-width: 600px) {
     .section__portfolio {
@@ -354,6 +367,20 @@ div.group+h3 {
 .section__portfolio__link {
     color: rgb(57, 202, 0);
 }
+
+.HUD__tabcontent {
+    padding: 6px 12px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    /* Hide scroll bar for IE, Edge, and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .HUD__tabcontent::-webkit-scrollbar {
+    display: none;
+  }
+  
 
 
 /* -------Contact block------- */
