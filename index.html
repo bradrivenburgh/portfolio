@@ -148,7 +148,6 @@
 
                 <!-- Showcase my personal projects -->
 
-                <h3 class="section__subheading">Personal Projects</h3>
 
                 <!-- Layout: Group 3 -->
 
@@ -274,22 +273,33 @@
 
                     <div class="item-1">
                         <div class="section__portfolio smalldesc" id="leetrun">
-                            <h3 class="section__portfolio__heading">Placeholder title </h3>
+                            <h3 class="section__portfolio__heading">LeetRun</h3>
                             <div class="section__portfolio__image">
-                                <img src="images/portfolio-JS-takehome.png"
+                                <img src="images/leetrun.png"
                                         alt="leetrun" onclick="expandProject(event)">
                             </div>
                             <div class="section__portfolio__description">
-                                <p><b>Brief description:</b> Explain what it is.</p>
-                                <p><b>Audience:</b> Explain who it is for.</p>
+                                <p><b>Brief description:</b> an application that allows users to record their 
+                                    runs and track their progress as they seek to increase their endurance, become faster, 
+                                    and meet their running goals.
+                                </p>
+                                <p><b>Audience:</b> Runners who want to use a web interface to log their runs, chart their progress,
+                                     and easily filter through their past entries. </p>
                                 <p>
-                                    <b>My approach:</b> Discuss the technology stack I used to build it and my strategy.
+                                    <b>My approach:</b> I used JavaScript, HTML, CSS, React, React Router, Chartjs, Jest, Node.js,
+                                    Express, Knex.js, PostgreSQL, JWT, Bcrypt, Mocha, Chai, Sinon, Vercel, Heroku, NPM, Git, and GitHub to build 
+                                    this app.  The REST API has four endpoints, three that enable user accounts (/login, /refresh, /users,) and 
+                                    one (/runs) that handles getting, inserting, updating, and deleting run entries for users.
                                 </p>
                                 <p>
-                                    <b>Lessons learned:</b> What did I learn from completing this project?
+                                    <b>Lessons learned:</b> The most complicated aspect of this project was learning how to use 
+                                    Jason Web Tokens (JWT) for user authentication.  It gave me an appreciation for how complicated
+                                    user authentication is and confidence that I can handle setting up at least hobby-level auth.  This 
+                                    project also presented a good opportunity to further my use of code layering and modularization,
+                                    especially in setting up service layers to handle user-related operations.
                                 </p>
-                                <p>Find it on <a class="section__portfolio__link" href="#" target="_new">GitHub</a>.</p>
-                                <p>Link to the <a class="section__portfolio__link" href="#" target="_new">live app</a>.</p>
+                                <p>Find it on <a class="section__portfolio__link" href="https://github.com/bradrivenburgh/leetrun-client" target="_new">GitHub</a>.</p>
+                                <p>Link to the <a class="section__portfolio__link" href="https://leetrun-client.vercel.app/" target="_new">live app</a>.</p>
                             </div>
                         </div>
                     </div>
