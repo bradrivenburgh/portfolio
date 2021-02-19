@@ -306,10 +306,10 @@ div.group+h3 {
 }
 
 .section__portfolio {
-    width: 100%;
+    max-width: 100%;
     background-color: rgb(52, 65, 110);
     color: #F9F9F9;
-    padding: .5rem .5rem;
+    padding: .5rem 1rem;
     margin: 1rem 0 1rem 0;
     border-radius: 10px;
     
@@ -325,19 +325,34 @@ div.group+h3 {
     display: none;
   }
 
-
-
 @media all and (min-width: 600px) {
     .section__portfolio {
-        max-width: 70%;
+        max-width: 80%;
         margin: 1.5rem auto;
     }
 }
 
 @media all and (min-width: 800px) {
     .section__portfolio {
-        max-width: 100%;
+        max-width: 80%;
     }
+}
+
+@media all and (min-width: 1400px) {
+    .section__portfolio {
+        max-width: 65%;
+    }  
+}
+
+@media all and (min-width: 2000px) {
+    .section__portfolio {
+        max-width: 50%;
+    }
+
+    .section__portfolio-intro {
+        text-align: center;
+    }
+
 }
 
 .section__portfolio__heading {
