@@ -191,7 +191,7 @@ a:active {
     }
 
     .primary-header nav ul {
-        margin: .20rem 2rem .75rem 2rem;
+        margin: 0 2rem 0 0;
         align-items: center;
     }
 
