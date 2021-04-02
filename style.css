@@ -137,6 +137,12 @@ a:active {
 
 
 /* -------Navigation------- */
+
+/* -------Mobile nav------- */
+#desktop-nav {
+    display: none;
+}
+
 .primary-header nav {
     display: flex;
     justify-content: center;
@@ -145,10 +151,11 @@ a:active {
 
 .primary-header nav ul {
     display: flex;
-    margin: .20rem 0 .75rem 0;
+    margin: .20rem 8% .75rem 8%;
     padding-inline-start: 0;
     flex-flow: row wrap;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .primary-header nav ul li {
@@ -167,14 +174,24 @@ a:active {
     color: rgb(255, 188, 81);
 }
 
+/* -------Desktop nav------- */
+
 @media all and (min-width: 800px) {
+    #desktop-nav {
+        display: flex;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
     .primary-header {
         display: flex;
         justify-content: space-between;
     }
 
     .primary-header nav ul {
-        margin: 0 .75rem 0 0;
+        margin: .20rem 2rem .75rem 2rem;
         align-items: center;
     }
 
@@ -202,7 +219,6 @@ a:active {
     }
 }
 
-
 /* -------Main content container------- */
 
 .main {
@@ -222,8 +238,6 @@ a:active {
     box-shadow: 0 0 2px 1px #2C3860;
     border-radius: 0px 0px 5% 5%;
 }
-
-
 
 @media all and (min-width: 800px) {
     .main {
