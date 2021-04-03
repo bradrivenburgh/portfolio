@@ -311,8 +311,7 @@ a:active {
     }
 }
 
-/* -------Portfolio element-------  
-Each project image will eventually link to a separate page that has more information about the project. */
+/* -------Portfolio element------- */
 
 header+p+h3,
 div.group+h3 {
@@ -417,7 +416,6 @@ div.group+h3 {
   }
   
 
-
 /* -------Contact block------- */
 
 .section__contact__map {
@@ -515,8 +513,6 @@ form button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgb(177, 175, 199);
 }
-
-
 
 
 /* -------Primary footer block------- */
