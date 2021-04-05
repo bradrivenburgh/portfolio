@@ -400,6 +400,19 @@ div.group+h3 {
 
 .section__portfolio__link {
     color: rgb(57, 202, 0);
+    border: 1px solid rgb(57, 202, 0);
+    padding: 10px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgba(90, 85, 85, 0.466);
+    text-decoration: none;
+}
+
+.section__portfolio__link:hover {
+    background-color: rgba(90, 85, 85, 0);
+    font-weight: 100;
+
 }
 
 .HUD__tabcontent {
