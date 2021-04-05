@@ -319,12 +319,12 @@ div.group+h3 {
 }
 
 .section__portfolio {
-    max-width: 100%;
     background-color: rgb(52, 65, 110);
     color: #F9F9F9;
     padding: .5rem 1rem;
     margin: 1rem 0 1rem 0;
     border-radius: 10px;
+    position: relative;
     
     /* Styles to hide scroll bar after making projects scroll because they're the same height */
     overflow-y: scroll;
@@ -338,34 +338,58 @@ div.group+h3 {
     display: none;
   }
 
-@media all and (min-width: 600px) {
+
+.section__portfolio__link {
+    color: rgb(57, 202, 0);
+    border: 1px solid rgb(57, 202, 0);
+    padding: 10px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgba(90, 85, 85, 0.466);
+    text-decoration: none;
+}
+
+.section__portfolio__link:hover {
+    background-color: rgba(90, 85, 85, 0);
+    font-weight: 100;
+}
+
+@media all and (min-width: 600px) and (max-width: 799px) {
     .section__portfolio {
         max-width: 80%;
-        margin: 1.5rem auto;
+        margin: 1rem auto;
     }
 }
 
 @media all and (min-width: 800px) {
     .section__portfolio {
-        max-width: 80%;
+        min-height: 880px;
     }
+
+    .section__portfolio__link-container {
+        position: absolute;
+        bottom: 1rem;
+    }
+    
 }
 
-@media all and (min-width: 1400px) {
+@media all and (min-width: 1000px) {
     .section__portfolio {
-        max-width: 65%;
+        min-height: 800px;
     }  
 }
 
-@media all and (min-width: 2000px) {
+@media all and (min-width: 1250px) {
     .section__portfolio {
-        max-width: 50%;
-    }
+        min-height: 750px;
+    }  
+}
 
-    .section__portfolio-intro {
-        text-align: center;
-    }
-
+@media all and (min-width: 1440px) {
+    .section__portfolio {
+        min-height: 700px;
+    }  
 }
 
 .section__portfolio__heading {
@@ -396,23 +420,6 @@ div.group+h3 {
     font-size: 1rem;
     margin: 0;
     line-height: 1.5rem;
-}
-
-.section__portfolio__link {
-    color: rgb(57, 202, 0);
-    border: 1px solid rgb(57, 202, 0);
-    padding: 10px;
-    display: inline-block;
-    margin: 5px;
-    border-radius: 5px;
-    background-color: rgba(90, 85, 85, 0.466);
-    text-decoration: none;
-}
-
-.section__portfolio__link:hover {
-    background-color: rgba(90, 85, 85, 0);
-    font-weight: 100;
-
 }
 
 .HUD__tabcontent {
