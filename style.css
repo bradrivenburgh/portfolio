@@ -406,16 +406,6 @@ div.group+h3 {
     margin: 0 auto;
 }
 
-.smalldesc {
-    max-height: 370px;
-    overflow: hidden;
-    transition: all .6s ease;
-}
-
-.smalldesc.expand {
-    max-height: 1500px;
-}
-
 .section__portfolio__description {
     font-size: 1rem;
     margin: 0;
